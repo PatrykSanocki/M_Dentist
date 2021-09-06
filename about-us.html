@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html ⚡>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="description" content="This is the AMP Boilerplate." />
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="preload" as="script" href="https://cdn.ampproject.org/v0.js" />
+    <link href='https://fonts.googleapis.com/css?family=Raleway&display=swap' rel='stylesheet'>
+    <script async src="https://cdn.ampproject.org/v0.js"></script>
+    <!-- Import other AMP Extensions here -->
+    <script async custom-element="amp-font" src="https://cdn.ampproject.org/v0/amp-font-0.1.js"></script>
+    <style amp-custom>
+      body {
+        width: auto;
+        margin: 0;
+        padding: 0;
+        padding-top: 50px;
+        font-family: "Raleway", sans-serif;
+        background-color: #2d2d2a;
+      }
+      .wrap {
+        max-width: 1024px;
+        margin: 0 auto;
+      }
+      .home-button {
+        margin-top: 8px;
+      }
+      .headerbar {
+        height: 50px;
+        position: absolute;
+        z-index: 999;
+        top: 0;
+        left: 0;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        font-size: 24px;
+        background-color: #e5dcc5;
+      }
+      .site-name {
+        margin: auto;
+        -webkit-tap-highlight-color: transparent;
+      }
+      .site-name a {
+        color: #2d2d2a;
+        text-decoration: none;
+      }
+      .nav-menu {
+        text-align: center;
+      }
+      .nav-menu ul {
+        margin: 0 0 40px 0;
+        padding: 0;
+        border-bottom: 2px solid #e5dcc5;
+        list-style: none;
+      }
+      .nav-menu ul li {
+        margin: 10px 0;
+        line-height: 26px;
+      }
+      .nav-menu ul li a {
+        text-decoration: none;
+        text-transform: uppercase;
+        font-size: 16px;
+        color: #e5dcc5;
+        border-bottom: 1px solid transparent;
+      }
+      .nav-menu ul li a.active {
+        font-weight: bold;
+      }
+      .nav-menu ul li a:hover {
+        border-bottom: 1px solid #2d2d2a;
+      }
+      .news-section {
+        height: 100px;
+        background-color: #e5dcc5;
+      }
+      .news-section p {
+        margin: 0;
+        padding: 0 20px;
+        font-size: 42px;
+        line-height: 100px;
+      }
+      div.footer {
+        background-color: #e5dcc5;
+        padding: 10px;
+        display: flex;
+        flex-wrap: wrap;
+      }
+      div.footer a {
+        display: inline-block;
+        text-decoration: none;
+        color: #2d2d2a;
+        text-transform: uppercase;
+        text-align: center;
+        padding: 5px 0;
+        flex-basis: 50%;
+        font-weight: bold;
+        -webkit-tap-highlight-color: transparent;
+      }
+      div.footer div {
+        border-top: 1px solid #2d2d2a;
+        width: 100%;
+        padding-top: 5px;
+        margin-top: 5px;
+      }
+      div.footer div p {
+        padding: 0;
+        margin: 0;
+        text-align: center;
+        color: #2d2d2a;
+        font-weight: bold;
+      }
+      div.card {
+        margin: 15px;
+        text-align: center;
+      }
+      div.card p.card-title {
+        color: #e5dcc5;
+        font-size: 20pt;
+        font-weight: bold;
+        text-align: center;
+        text-transform: uppercase;
+      }
+      div.card p.card-text, p.card-content {
+        text-align: justify;
+        text-indent: 20px;
+        color: #e5dcc5;
+      }
+      div.card p.card-dentist {
+        color: #e5dcc5;
+        font-size: 20pt;
+        font-weight: bold;
+        text-align: center;
+      }
+    </style>
+    <style amp-boilerplate>
+      body {
+        -webkit-animation: -amp-start 8s steps(1, end) 0s 1 normal both;
+        -moz-animation: -amp-start 8s steps(1, end) 0s 1 normal both;
+        -ms-animation: -amp-start 8s steps(1, end) 0s 1 normal both;
+        animation: -amp-start 8s steps(1, end) 0s 1 normal both;
+      }
+      @-webkit-keyframes -amp-start {
+        from {
+          visibility: hidden;
+        }
+        to {
+          visibility: visible;
+        }
+      }
+      @-moz-keyframes -amp-start {
+        from {
+          visibility: hidden;
+        }
+        to {
+          visibility: visible;
+        }
+      }
+      @-ms-keyframes -amp-start {
+        from {
+          visibility: hidden;
+        }
+        to {
+          visibility: visible;
+        }
+      }
+      @-o-keyframes -amp-start {
+        from {
+          visibility: hidden;
+        }
+        to {
+          visibility: visible;
+        }
+      }
+      @keyframes -amp-start {
+        from {
+          visibility: hidden;
+        }
+        to {
+          visibility: visible;
+        }
+      }
+    </style>
+    <noscript
+      ><style amp-boilerplate>
+        body {
+          -webkit-animation: none;
+          -moz-animation: none;
+          -ms-animation: none;
+          animation: none;
+        }
+      </style></noscript
+    >
+
+    <link rel="canonical" href="./about-us.html" />
+    <title>Dentist - About us</title>
+  </head>
+  <body>
+    <header class="headerbar">
+      <div class="site-name"><a href="./index.html">Dentist</a></div>
+    </header>
+    <div class="nav-menu">
+      <ul>
+        <li><a href="./index.html">News</a></li>
+        <li><a class="active" href="./about-us.html">About us</a></li>
+        <li><a href="./prices.html">Prices</a></li>
+        <li><a href="./contact.html">Contact</a></li>
+      </ul>
+    </div>
+    <div class="wrap">
+    <article>
+      <div class="news-section"><p>About us</p></div>
+    </article>
+    <article>
+      <div class="card">
+        <amp-img
+        data-hero
+          width="450"
+          height="300"
+          src="./pictures/dentist-2589771_1024.jpg"
+          layout="responsive"
+        ></amp-img>
+        <p class="card-title">Dentist office - Lorem, ipsum.</p>
+        <p class="card-text">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa quis
+          illo recusandae perspiciatis ex. Enim debitis ipsam ut ducimus quasi
+          voluptates quam omnis est eaque ullam beatae nemo molestias nam
+          perspiciatis aperiam quidem, explicabo fugit quo. Optio voluptas
+          distinctio odio placeat id tenetur hic quae quos a quas? Hic quis quae
+          voluptatem nobis quo natus consequuntur reiciendis rerum fugit error
+          eum doloremque deserunt labore fuga atque dolores dicta quidem aliquid
+          excepturi, iure beatae sunt enim.
+        </p>
+        <p class="card-text">
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Porro
+          molestiae odit harum dignissimos aliquid error temporibus dolore
+          aliquam eum. Doloribus enim quae aperiam accusamus omnis nobis dolorum
+          perferendis facere, recusandae autem illum itaque fugiat libero
+          distinctio exercitationem quam. Facilis, ea!
+        </p>
+        <p class="card-text">
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Porro
+          molestiae odit harum dignissimos aliquid error temporibus dolore
+          aliquam eum. Doloribus enim quae aperiam accusamus omnis nobis dolorum
+          perferendis facere, recusandae autem illum itaque fugiat libero
+          distinctio exercitationem quam. Facilis, ea!
+        </p>
+        <p class="card-title">Our staff</p>
+      </div>
+      
+      <div class="card">
+        <amp-img
+          class="card-img"
+          src="./pictures/doctor-563429_1024.jpg"
+          width="450"
+          height="300"
+          layout="responsive"
+        ></amp-img>
+        <p class="card-dentist">James Doe</p>
+        <p class="card-content">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quibusdam nesciunt cum aut nobis suscipit quis, corporis amet ut facilis doloribus tenetur distinctio nemo est odit, molestiae alias accusamus obcaecati, neque non esse. Nam earum a recusandae provident doloremque! Et nobis neque optio molestias ut dicta. Minus possimus debitis sequi dolor nulla nemo vitae fugit, maxime itaque molestiae magnam facilis, quaerat ratione earum expedita repellendus! Accusantium sapiente deleniti culpa, quidem voluptate quod debitis omnis eaque dolor laudantium enim iusto laborum provident vel amet! Voluptates iusto, beatae doloremque repudiandae quibusdam aliquid, eveniet repellat natus debitis necessitatibus ducimus rem omnis, nam autem qui inventore recusandae. Tempora quibusdam reiciendis neque aperiam adipisci tempore voluptates fugiat libero repudiandae, non omnis soluta mollitia pariatur unde. Provident veritatis, quae nam corrupti repudiandae tempore mollitia deserunt odit doloribus dolorem magni labore repellendus assumenda. Atque porro modi voluptas, maxime, quisquam, quos ullam quia odit enim soluta laudantium suscipit consequatur exercitationem cumque velit expedita mollitia voluptate! Vero asperiores sit, libero nam reprehenderit soluta quod tempore atque! Quaerat adipisci laboriosam molestias unde minima temporibus magnam. Possimus unde accusantium numquam nesciunt reiciendis fugiat optio, qui illo voluptates facere, est labore soluta delectus voluptatem quod nulla, quos excepturi cupiditate ab. Expedita, esse ipsa?</p>
+      </div>
+      <div class="card">
+        <amp-img
+          class="card-img"
+          src="./pictures/dentist-2530990_1024.jpg"
+          width="450"
+          height="300"
+          layout="responsive"
+        ></amp-img>
+        <p class="card-dentist">Jane Doe</p>
+        <p class="card-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et, quidem! Mollitia delectus totam hic culpa ut quasi maiores in laudantium harum. Quam recusandae vel voluptates exercitationem numquam voluptatibus aperiam ex blanditiis temporibus ipsam, quo quae ipsum aliquid magnam tenetur nihil, id corporis! Totam autem sit cupiditate non fugiat sunt enim exercitationem vero blanditiis quibusdam mollitia corrupti ea sequi voluptate velit nostrum, sapiente libero necessitatibus illum quam tenetur accusantium adipisci ipsam! Quod dolor deserunt odit quo, obcaecati, nulla voluptate nihil sequi laudantium voluptatibus eveniet consequuntur eos ad quidem necessitatibus nemo dolore voluptatum ipsum consequatur quam, perspiciatis culpa ab. Voluptates voluptate repellendus a accusantium quod eius iure culpa odio, nisi quaerat, doloremque omnis adipisci, enim velit quis quae optio quasi ducimus perferendis deserunt odit commodi nihil porro ipsam. Voluptatum mollitia nulla totam.</p>
+      </div>
+      <div class="card">
+        <amp-img
+          class="card-img"
+          src="./pictures/dentist-4373290_1024.jpg"
+          width="450"
+          height="300"
+          layout="responsive"
+        ></amp-img>
+        <p class="card-dentist">Wayne Lorem</p>
+        <p class="card-content">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus repellendus cupiditate non laborum et maiores at ad, exercitationem, laboriosam perspiciatis, soluta quo. Hic, accusamus. Iste ullam illo repellendus dolorum eaque porro fugit tenetur cum, asperiores consequuntur ipsam ab, non quia veritatis est voluptatem fugiat obcaecati quo quibusdam ratione? Iure excepturi obcaecati tempore iusto molestias doloribus autem, repellendus quam tempora fugiat similique repudiandae. Sed ipsa ea atque, impedit necessitatibus perferendis laboriosam tempora architecto ducimus obcaecati minima dicta, doloribus ab molestias repudiandae laborum doloremque numquam omnis provident illo temporibus recusandae porro laudantium fugit? Nesciunt rem accusamus numquam fuga facere perspiciatis omnis magni neque esse quo laboriosam quia similique, debitis totam fugit magnam illum nobis ipsam excepturi cupiditate. Cum ab mollitia laudantium nostrum.</p>
+      </div>
+    </div>
+    </article>
+  </div>
+    <div class="footer">
+      <a href="#">Lorem.</a><a href="#">Lorem, ipsum.</a
+      ><a href="#">Lorem, ipsum.</a><a href="#">Lorem.</a><a href="#">Lorem.</a
+      ><a href="#">Lorem.</a>
+      <div><p>Lorem ipsum dolor sit amet.</p></div>
+    </div>
+  </body>
+</html>

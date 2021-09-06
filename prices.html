@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html ⚡>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="description" content="This is the AMP Boilerplate." />
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="preload" as="script" href="https://cdn.ampproject.org/v0.js" />
+    <script async src="https://cdn.ampproject.org/v0.js"></script>
+    <script async custom-element="amp-font" src="https://cdn.ampproject.org/v0/amp-font-0.1.js"></script>
+    <link href='https://fonts.googleapis.com/css?family=Raleway&display=swap' rel='stylesheet'>
+    <style amp-custom>
+      body {
+        width: auto;
+        margin: 0;
+        padding: 0;
+        padding-top: 50px;
+        font-family: "Raleway", sans-serif;
+        background-color: #2d2d2a;
+      }
+      .wrap {
+        max-width: 1024px;
+        margin: 0 auto;
+      }
+      .home-button {
+        margin-top: 8px;
+      }
+      .headerbar {
+        height: 50px;
+        position: absolute;
+        z-index: 999;
+        top: 0;
+        left: 0;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        font-size: 24px;
+        background-color: #e5dcc5;
+      }
+      .site-name {
+        margin: auto;
+        -webkit-tap-highlight-color: transparent;
+      }
+      .site-name a {
+        color: #2d2d2a;
+        text-decoration: none;
+      }
+      .nav-menu {
+        text-align: center;
+      }
+      .nav-menu ul {
+        margin: 0 0 40px 0;
+        padding: 0;
+        border-bottom: 2px solid #e5dcc5;
+        list-style: none;
+      }
+      .nav-menu ul li {
+        margin: 10px 0;
+        line-height: 26px;
+      }
+      .nav-menu ul li a {
+        text-decoration: none;
+        text-transform: uppercase;
+        font-size: 16px;
+        color: #e5dcc5;
+        border-bottom: 1px solid transparent;
+        -webkit-tap-highlight-color: transparent;
+      }
+      .nav-menu ul li a.active {
+        font-weight: bold;
+      }
+      .nav-menu ul li a:hover {
+        border-bottom: 1px solid #2d2d2a;
+      }
+      .news-section {
+        height: 100px;
+        background-color: #e5dcc5;
+      }
+      .news-section p {
+        margin: 0;
+        padding: 0 20px;
+        font-size: 42px;
+        line-height: 100px;
+      }
+      div.footer {
+        background-color: #e5dcc5;
+        padding: 10px;
+        display: flex;
+        flex-wrap: wrap;
+      }
+      div.footer a {
+        display: inline-block;
+        text-decoration: none;
+        color: #2d2d2a;
+        text-transform: uppercase;
+        text-align: center;
+        padding: 5px 0;
+        flex-basis: 50%;
+        font-weight: bold;
+        -webkit-tap-highlight-color: transparent;
+      }
+      div.footer div {
+        border-top: 1px solid #2d2d2a;
+        width: 100%;
+        padding-top: 5px;
+        margin-top: 5px;
+      }
+      div.footer div p {
+        padding: 0;
+        margin: 0;
+        text-align: center;
+        color: #2d2d2a;
+        font-size: 14pt;
+        font-weight: bold;
+      }
+      table {
+        width: 100%;
+        margin-bottom: 40px;
+        border-spacing: 5px 5px;
+        color: #e5dcc5;
+        font-size: 14pt;
+      }
+      table th {
+        background-color: #2d2d2a;
+        font-style: italic;
+      }
+      table:not(:first-child) th {
+        background-color: transparent;
+      }
+      table th:first {
+        width: 50%;
+      }
+      table th:nth-child(2) {
+        width: 25%;
+      }
+      table th:nth-child(3) {
+        width: 25%;
+      }
+      table tr:not(:first-child) {
+        padding-bottom: 5px;
+      }
+      table tr:not(:first-child) td:not(:first-child) {
+        text-align: center;
+      }
+      table tr:not(:first-child):not(:last-child) td {
+        padding-bottom: 5px;
+        border-bottom: 1px solid #e5dcc5;
+      }
+      p.table-service {
+        color: #e5dcc5;
+        letter-spacing: 1px;
+        font-weight: bold;
+        text-align: center;
+        text-transform: uppercase;
+      }
+      div.card {
+        margin: 15px;
+        text-align: center;
+        color: #e5dcc5;
+      }
+      div.card p.card-title {
+        font-weight: bold;
+        text-align: center;
+        text-transform: uppercase;
+      }
+      div.card button a {
+        text-decoration: none;
+        color: #2d2d2a;
+        text-transform: uppercase;
+      }
+      button.more {
+        margin: 0 auto 10px 0;
+        padding: 5px 0;
+        width: 150px;
+        font-size: 16px;
+        line-height: 24px;
+        background-color: #e5dcc5;
+        border: none;
+        border-radius: 15px;
+      }
+    </style>
+    <style amp-boilerplate>
+      body {
+        -webkit-animation: -amp-start 8s steps(1, end) 0s 1 normal both;
+        -moz-animation: -amp-start 8s steps(1, end) 0s 1 normal both;
+        -ms-animation: -amp-start 8s steps(1, end) 0s 1 normal both;
+        animation: -amp-start 8s steps(1, end) 0s 1 normal both;
+      }
+      @-webkit-keyframes -amp-start {
+        from {
+          visibility: hidden;
+        }
+        to {
+          visibility: visible;
+        }
+      }
+      @-moz-keyframes -amp-start {
+        from {
+          visibility: hidden;
+        }
+        to {
+          visibility: visible;
+        }
+      }
+      @-ms-keyframes -amp-start {
+        from {
+          visibility: hidden;
+        }
+        to {
+          visibility: visible;
+        }
+      }
+      @-o-keyframes -amp-start {
+        from {
+          visibility: hidden;
+        }
+        to {
+          visibility: visible;
+        }
+      }
+      @keyframes -amp-start {
+        from {
+          visibility: hidden;
+        }
+        to {
+          visibility: visible;
+        }
+      }
+    </style>
+    <noscript
+      ><style amp-boilerplate>
+        body {
+          -webkit-animation: none;
+          -moz-animation: none;
+          -ms-animation: none;
+          animation: none;
+        }
+      </style></noscript
+    >
+    <link rel="canonical" href="./prices.html" />
+    <title>Dentist - Contact</title>
+  </head>
+  <body>
+    <header class="headerbar">
+      <div class="site-name"><a href="./index.html">Dentist</a></div>
+    </header>
+    <div class="nav-menu">
+      <ul>
+        <li><a href="./index.html">News</a></li>
+        <li><a href="./about-us.html">About us</a></li>
+        <li><a class="active" href="./prices.html">Prices</class=a></li>
+        <li><a href="./contact.html">Contact</a></li>
+      </ul>
+    </div>
+    <div class="wrap">
+      <article>
+        <div class="news-section"><p>Prices</p></div>
+      </article>
+      <article>
+        <div class="card">
+          <amp-img
+            class="card-img"
+            data-hero
+            src="./pictures/dentist-428648_1024.jpg"
+            width="450"
+            height="300"
+            layout="responsive"
+          ></amp-img>
+          <p class="card-title">Doloribus ut iste.</p>
+          <p class="card-content">Lorem ipsum dolor sit amet consectetur.</p>
+          <button class="more">
+            <a href="#p1">more</a>
+          </button>
+        </div>
+      </article>
+      <article>
+        <div class="card">
+          <amp-img
+            class="card-img"
+            src="./pictures/dental-2450751_1024.jpg"
+            width="450"
+            height="300"
+            layout="responsive"
+          ></amp-img>
+          <p class="card-title">Lorem, ipsum dolor.</p>
+          <p class="card-content">Lorem ipsum dolor sit amet consectetur.</p>
+          <button class="more">
+            <a href="#p2">more</a>
+          </button>
+        </div>
+      </article>
+      <article>
+        <div class="card">
+          <amp-img
+            class="card-img"
+            src="./pictures/doctor-1149149_1024.jpg"
+            width="450"
+            height="300"
+            layout="responsive"
+          ></amp-img>
+          <p class="card-title">Lorem, ipsum.</p>
+          <p class="card-content">Lorem ipsum dolor sit amet consectetur.</p>
+          <button class="more">
+            <a href="#p3">more</a>
+          </button>
+        </div>
+      </article>
+      <article>
+        <div class="card">
+          <amp-img
+            class="card-img"
+            src="./pictures/dentist-1864921_1024.jpg"
+            width="450"
+            height="300"
+            layout="responsive"
+          ></amp-img>
+          <p class="card-title">Repudiandae, sapiente.</p>
+          <p class="card-content">Lorem ipsum dolor sit amet consectetur.</p>
+          <button class="more">
+            <a href="#p4">more</a>
+          </button>
+        </div>
+      </article>
+      <article>
+        <table>
+          <tr>
+            <th>Service</th>
+            <th>Price from:</th>
+            <th>Price to:</th>
+          </tr>
+        </table>
+        <p id="p1" class="table-service">Doloribus ut iste.</p>
+        <table>
+          <tr>
+            <th></th>
+            <th></th>
+            <th></th>
+          </tr>
+          <tr>
+            <td>Lorem, ipsum.</td>
+            <td>20$</td>
+            <td>30$</td>
+          </tr>
+          <tr>
+            <td>Lorem, ipsum dolor.</td>
+            <td>50$</td>
+            <td>70$</td>
+          </tr>
+          <tr>
+            <td>Lorem ipsum dolor sit amet.</td>
+            <td>75$</td>
+            <td>80$</td>
+          </tr>
+          <tr>
+            <td>Lorem, ipsum.</td>
+            <td>20$</td>
+            <td>30$</td>
+          </tr>
+          <tr>
+            <td>Lorem, ipsum dolor.</td>
+            <td>50$</td>
+            <td>70$</td>
+          </tr>
+          <tr>
+            <td>Lorem ipsum dolor sit amet.</td>
+            <td>55$</td>
+            <td>90$</td>
+          </tr>
+          <tr>
+            <td>Lorem ipsum dolor, sit amet consectetur adipisicing.</td>
+            <td>120$</td>
+            <td>230$</td>
+          </tr>
+          <tr>
+            <td>Lorem, ipsum dolor.</td>
+            <td>50$</td>
+            <td>70$</td>
+          </tr>
+          <tr>
+            <td>Lorem ipsum dolor sit amet.</td>
+            <td>175$</td>
+            <td>180$</td>
+          </tr>
+        </table>
+        <p id="p2" class="table-service">Lorem, ipsum dolor.</p>
+        <table>
+          <tr>
+            <th></th>
+            <th></th>
+            <th></th>
+          </tr>
+          <tr>
+            <td>Lorem, ipsum.</td>
+            <td>20$</td>
+            <td>30$</td>
+          </tr>
+          <tr>
+            <td>Lorem, ipsum dolor.</td>
+            <td>50$</td>
+            <td>70$</td>
+          </tr>
+          <tr>
+            <td>Lorem ipsum dolor sit amet.</td>
+            <td>75$</td>
+            <td>80$</td>
+          </tr>
+          <tr>
+            <td>Lorem, ipsum.</td>
+            <td>20$</td>
+            <td>30$</td>
+          </tr>
+          <tr>
+            <td>Lorem, ipsum dolor.</td>
+            <td>50$</td>
+            <td>70$</td>
+          </tr>
+          <tr>
+            <td>Lorem ipsum dolor sit amet.</td>
+            <td>55$</td>
+            <td>90$</td>
+          </tr>
+        </table>
+        <p id="p3" class="table-service">Lorem, ipsum.</p>
+        <table>
+          <tr>
+            <th></th>
+            <th></th>
+            <th></th>
+          </tr>
+          <tr>
+            <td>Lorem, ipsum.</td>
+            <td>20$</td>
+            <td>30$</td>
+          </tr>
+          <tr>
+            <td>Lorem, ipsum dolor.</td>
+            <td>50$</td>
+            <td>70$</td>
+          </tr>
+          <tr>
+            <td>Lorem ipsum dolor sit amet.</td>
+            <td>75$</td>
+            <td>80$</td>
+          </tr>
+        </table>
+        <p id="p4" class="table-service">Repudiandae, sapiente.</p>
+        <table>
+          <tr>
+            <th></th>
+            <th></th>
+            <th></th>
+          </tr>
+          <tr>
+            <td>Lorem, ipsum.</td>
+            <td>20$</td>
+            <td>30$</td>
+          </tr>
+          <tr>
+            <td>Lorem, ipsum dolor.</td>
+            <td>50$</td>
+            <td>70$</td>
+          </tr>
+          <tr>
+            <td>Lorem ipsum dolor sit amet.</td>
+            <td>75$</td>
+            <td>80$</td>
+          </tr>
+          <tr>
+            <td>Lorem, ipsum.</td>
+            <td>20$</td>
+            <td>30$</td>
+          </tr>
+          <tr>
+            <td>Lorem, ipsum dolor.</td>
+            <td>50$</td>
+            <td>70$</td>
+          </tr>
+          <tr>
+            <td>Lorem ipsum dolor sit amet.</td>
+            <td>55$</td>
+            <td>90$</td>
+          </tr>
+        </table>
+      </article>
+    </div>
+    <div class="footer">
+      <a href="#">Lorem.</a><a href="#">Lorem, ipsum.</a
+      ><a href="#">Lorem, ipsum.</a><a href="#">Lorem.</a><a href="#">Lorem.</a
+      ><a href="#">Lorem.</a>
+      <div><p>Lorem ipsum dolor sit amet.</p></div>
+    </div>
+  </body>
+</html>
